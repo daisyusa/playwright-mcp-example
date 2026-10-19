@@ -1,0 +1,19 @@
+{
+  "name": "pwmcp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "perf:smoke": "k6 run -e PROFILE=smoke performance/api-performance.js",
+    "perf:load": "k6 run -e PROFILE=load performance/api-performance.js",
+    "perf:stress": "k6 run -e PROFILE=stress performance/api-performance.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5"
+  }
+}
